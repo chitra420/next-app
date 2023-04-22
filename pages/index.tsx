@@ -8,7 +8,7 @@ export default function Home() {
   const [roomId,setRoomId] = useState("");
   const [username,setUsername] = useState("");
   const [msg,setMsg] = useState("");
-  const[messageList,setMessageList] = useState([]);
+  const[messageList,setMessageList] = useState<any []>([]);
   useEffect(()=>{
    
     
@@ -25,7 +25,6 @@ export default function Home() {
     }
     await socket.emit('send_message',data);
     setMessageList((messageList) => [...messageList, data])
-    setMsg('')
   }
 
   useEffect(()=>{
