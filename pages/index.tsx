@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link';
 import { useEffect, useState } from 'react'
 import io from 'socket.io-client'
-const socket = io.connect("https://gyan-websocket.onrender.com");
+const socket = io("https://gyan-websocket.onrender.com");
 var i =1;
 export default function Home() {
   const [roomId,setRoomId] = useState("");
