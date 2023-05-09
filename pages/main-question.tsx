@@ -30,6 +30,12 @@ export default function MainQuestion() {
         import('../public/lottie/catick.json').then(setlottietick);
         import('../public/lottie/party-popper.json').then(setlottieparty);
 
+        setInterval(() => {
+            if (document.getElementById('online_user_cnt')) {
+                document.getElementById('online_user_cnt').innerHTML = (Math.floor(Math.random() * (10000 - 1000 + 1) + 1000)).toString();
+            }
+        }, 3000)
+
     }, []);
 
     return (
@@ -60,6 +66,13 @@ export default function MainQuestion() {
                 <div className="container" style={{ padding: "0px" }}>
 
                     <div className="w-full max-w-2xl mx-auto p-5 rounded-lg  bg-gray-900/60">
+                             <p className="text-lg  text-white whitespace-nowrap text-right">
+                                <span className="relative inline-flex h-3 w-3 mr-3">
+                                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 "></span>
+                                    <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+                                </span>
+
+                                Online User <b id='online_user_cnt' className="text-yellow-300">9000</b></p>
 
                         <div className="first-part">
                             <div className="flex flex-col items-center text-center mb-5">
