@@ -1,0 +1,51 @@
+@media only screen and (max-width: 768px) {
+  .section-area {
+     padding: 40px 0;
+  }
+
+  .tournament-card .tour-body {
+     padding: 10px;
+  }
+
+  .tournament-card .tour-header {
+     padding: 10px;
+  }
+
+  .tournament-card .tour-header .btn {
+     font-size: 16px;
+     padding: 5px 15px;
+  }
+
+  .tournament-card .tour-header h4 {
+     font-size: 18px;
+  }
+
+  .tour-prize .pool-btn {
+     padding: 6px;
+     font-size: 20px;
+     border-radius: 30px;
+  }
+
+  .tour-entry .entry-btn {
+     padding: 6px;
+     font-size: 20px;
+     border-radius: 30px;
+  }
+
+  .tour-timer .timespan {
+     font-size: 14px;
+     padding: 3px 10px;
+  }
+
+  .tour-prize span {
+     font-size: 14px;
+  }
+
+  .tour-entry span {
+     font-size: 14px;
+  }
+
+  .tour-timer span {
+     font-size: 14px;
+  }
+}
